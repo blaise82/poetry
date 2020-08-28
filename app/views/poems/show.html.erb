@@ -1,0 +1,12 @@
+<div class="wrap">
+  <p id="notice"><%= notice %></p>
+
+  <p class="title">"<%= @poem.title %>"</p>
+  <p class="sub-title">Author: <%= @poem.author %></p>
+<div class="com-text">
+  <%= @poem.poem %> 
+  </div>
+  <br/>
+    <br/>
+  <%= link_to '<< Back', root_path %>
+</div>

@@ -1,0 +1,9 @@
+<div class="wrap">
+  <% @poems.each do |poem| %>
+  <div class="item">
+    <p class="main-title">"<%= poem.title %>"</p>
+    <p class="poem"><%= poem.poem %></p>
+    <%= link_to 'Read More >>', poem, :html => {:class => 'more'} %>
+  </div>
+  <% end %>
+</div>
